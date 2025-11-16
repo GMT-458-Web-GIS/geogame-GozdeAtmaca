@@ -40,6 +40,10 @@ Core Mechanic : With clicking the start button a random flag will display on the
 • OpenLayers(OL) : For interactive web map visualization. 
 
 • flagpedia.net : To retrieve flag images  
+
+
+![Background Image](background.jpg)
+
  
 
 
