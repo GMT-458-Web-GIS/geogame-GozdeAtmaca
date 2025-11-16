@@ -7,6 +7,7 @@ The game encourages users to test their geographical knowledge by matching count
 
 ## AIM OF THE GAME (Flag Hunt — A Country Guessing Game with Flag)
 The goal of this game is to test the user’s knowledge of world geography. Aiming for a point close to the capital's coordinates.
+
 Core Mechanic : With clicking the start button a random flag will display on the screen.The user is expected to click on the map, locating the country corresponding to the displayed flag. 
 
  ## Game Logic and Core Requirements:
