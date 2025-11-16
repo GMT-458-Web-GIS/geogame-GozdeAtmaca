@@ -1,59 +1,43 @@
-## Project Title:
+## PROJECT TITLE
 FLAG HUNT 
 
-## Aim:
-The goal of this game is to test the user’s knowledge of world geography.
-The player will see random locations on the map and must guess which country they belong to.
-
- ## Game Logic:
-	•	The map will be displayed using OpenLayers.
-	•	When the game starts, a random coordinate appears on the world map.
-  
-##  Flag Hunt — A Country Guessing Game with Flag
-
-##  Aim
+##  AIM OF THE PROJECT
 The aim of this project is to design and develop an interactive geo-game using HTML, CSS, and JavaScript with OpenLayers.  
-The game encourages users to test their geographical knowledge by matching country flags with their correct locations on a world map.  
+The game encourages users to test their geographical knowledge by matching country flags with their correct locations on a world map.
 
+## AIM OF THE GAME (Flag Hunt — A Country Guessing Game with Flag)
+The goal of this game is to test the user’s knowledge of world geography. Aiming for a point close to the capital's coordinates.
+Core Mechanic : With clicking the start button a random flag will display on the screen.The user is expected to click on the map, locating the country corresponding to the displayed flag. 
 
-## Game Description
+ ## Game Logic and Core Requirements:
+	• Geographic Component : The map will be displayed using OpenLayers(OL) library.
+	• Time : The game is played within a strict 90 second time limit.
+	• Scoring : Each correct answer is +10 points. Each incorrect answer deducts 5 seconds from the remaining time.
+	• Success Threshold : The user's clicked point must be within 500 km of the correct country's capital coordinates.
+	• Difficulty Level : Medium
+  
+
+ ## How Will The Game Progresss ?
 
 **FLAG HUNT** is a time-based geo-game where the player must correctly identify the location of a country on a world map by clicking on it after seeing its flag.  
 
-The game includes:
+• Progression Mechanism : The game is played withina fixed 90 second time limit. The user's goal is to score the highest possible points by correctly locating as many flags as possible before the time runs out.
 
-• A continent filter (e.g., Europe, Asia, Africa)  
-• A 60-second countdown timer with a visual progress bar  
-• Randomly selected country flags each round  
-• A scoring system (+10 points for correct guesses, -5 seconds for wrong ones)
+• Feedback and Payout :  Blue(target/correct answer) and Red(click/user answer). Correct click awards +10 points. Incorrect click results -5 second.
 
-
-## Game Mechanics
-
-• *Gameplay* : A random flag appears, and the user clicks on the corresponding country on the map. 
-• *Timer* : 60 seconds total with a progress bar animation. 
-• *Scoring* : +10 points if the guess is within 500 km; -5 seconds for wrong guesses. 
-• *Filter* : The player can select a continent or region before starting the game. 
-• *Goal* : Achieve the highest possible score before time runs out. 
-
+• Filter : The player can select a continent or region before starting the game.
 
 
 ## Technologies and Libraries
 
-• HTML, CSS, JavaScript
-• OpenLayers : For interactive web map visualization  
-• ol/sphere : For geographic distance calculations  
+• HTML5 : Using for structure of the game(title , buttons, map, flag box).
+• CSS3 : Using for styling the application, defining the visual theme.
+• JavaScript(JS) : Using for implementing the game logic , handling user interactions.
+• OpenLayers(OL) : For interactive web map visualization.    
 • flagpedia.net : To retrieve flag images  
  
 
 
-## How to Play
-
-1. Select a continent or “All Regions.”  
-2. Click Start Game to begin.  
-3. A random flag appears — click on the map where you think that country is located.  
-4. Earn points for accuracy, lose time for mistakes.  
-5. When time runs out, the final score is displayed.
 
 
   
@@ -61,6 +45,6 @@ The game includes:
 ---
 
 ##  Author
-*Gözde Atmaca*  
+Gözde Atmaca
 GMT458 – Web GIS  
 
