@@ -31,9 +31,13 @@ Core Mechanic : With clicking the start button a random flag will display on the
 ## Technologies and Libraries
 
 • HTML5 : Using for structure of the game(title , buttons, map, flag box).
+
 • CSS3 : Using for styling the application, defining the visual theme.
+
 • JavaScript(JS) : Using for implementing the game logic , handling user interactions.
-• OpenLayers(OL) : For interactive web map visualization.    
+
+• OpenLayers(OL) : For interactive web map visualization. 
+
 • flagpedia.net : To retrieve flag images  
  
 
