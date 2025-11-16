@@ -42,6 +42,8 @@ Core Mechanic : With clicking the start button a random flag will display on the
 • flagpedia.net : To retrieve flag images  
 
 
+![Design of the image](design.jpg)
+
 ![Background Image](background.jpg)
 
  
