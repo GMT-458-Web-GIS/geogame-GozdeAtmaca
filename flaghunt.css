@@ -1,0 +1,320 @@
+:root {
+
+--primary-blue: #3498db; 
+--secondary-blue: #2980b9;
+--accent-red: #e74c3c;
+--background-main: #ecf0f1;
+--container-bg: rgba(255, 255, 255, 0.7); 
+--text-color: #2c3e50;      
+--shadow-light: rgba(0, 0, 0, 0.15);
+--map-border-color: #4a69bd;
+}
+
+
+
+body {
+
+font-family: 'Arial', sans-serif;
+background: url('https://wallpapers.com/images/hd/world-map-aesthetic-29ugqjopqz0jrvbz.jpg') no-repeat center center fixed;
+background-size: cover;
+background-color: #3f51b5;
+text-align: center;
+color: var(--text-color);
+margin: 0;
+padding: 20px 0;
+}
+
+
+
+#container {
+
+width: 90%;
+max-width: 960px;
+margin: auto;
+padding: 25px;
+background-color: var(--container-bg);
+border-radius: 12px;
+box-shadow: 0 4px 15px var(--shadow-light);
+overflow: auto; 
+}
+
+
+
+h1 {
+  
+color:var(--secondary-blue);
+margin-bottom: 25px;
+font-size: 2.5em;
+text-transform: uppercase;
+letter-spacing: 1px;
+border-bottom: 3px solid var(--primary-blue);
+padding-bottom: 10px;
+clear: both;
+
+}
+
+
+.left-col-width {
+
+width: 45%;
+float: left;
+clear: left;
+margin-bottom: 15px;
+}
+
+
+
+.right-col-width {
+
+width: 50%;
+float: right;
+margin-bottom: 15px;
+}
+
+
+
+#flag-box {
+
+@extend .left-col-width; 
+margin: 20px 0 20px 0;
+padding: 15px 15px;
+background-color: white;
+border-radius: 12px;
+box-shadow: 0 4px 10px var(--shadow-light);
+transition: transform 0.3s ease-in-out;
+display: block;
+
+}
+
+
+#controls {
+
+@extend .right-col-width; 
+margin-top: 20px;
+padding: 12px 0;
+background-color: var(--background-main);
+border-radius: 8px;
+display: block;
+box-shadow: 0 1px 5px var(--shadow-light);
+}
+
+
+
+button#startBtn {
+
+@extend .left-col-width; 
+padding: 12px 0;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+background-color: var(--primary-blue);
+color: white;
+border: none;
+border-radius: 8px;
+box-shadow: 0 4px 0 var(--secondary-blue);
+transition: background 0.3s, transform 0.1s;
+text-transform: uppercase;
+margin-top: 0;
+}
+
+
+
+#info {
+
+@extend .left-col-width; 
+font-size: 1.2em;
+font-weight: bold;
+padding: 15px 0;
+color: var(--text-color);
+margin-top: 0;
+
+}
+
+
+
+.map {
+
+@extend .right-col-width; 
+height: 500px;
+margin-top: 20px;
+border: 2px solid var(--map-border-color);
+border-radius: 8px;
+box-shadow: 0 0 25px var(--shadow-light);
+cursor: crosshair;
+
+ margin-left: 2%; 
+
+}
+
+
+
+
+
+#regionSelect {
+
+padding: 8px 12px;
+border: 1px solid var(--secondary-blue);
+border-radius: 6px;
+font-size: 16px;
+color: var(--text-color);
+background-color: white;
+cursor: pointer;
+}
+
+
+
+#timerText, #score {
+
+color: var(--accent-red);
+margin: 0 8px;
+font-size: 1.1em;
+}
+
+
+
+#timerBarContainer {
+
+width: 100%;
+height: 12px;
+background-color: #ccc;
+margin: 10px auto 0 auto;
+border-radius: 6px;
+overflow: hidden;
+clear: both;
+}
+
+
+
+#timerBar {
+
+width: 100%;
+height: 100%;
+background-color: #4caf50;
+transition: width 1s linear;
+}
+
+
+
+#flag-box p {
+
+color: var(--text-color);
+
+}
+
+
+
+#flag {
+
+width: 180px;
+border: 3px solid var(--secondary-blue);
+border-radius: 6px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+max-height: 120px;
+}
+
+
+
+button:hover {
+
+background-color: var(--secondary-blue);
+box-shadow: 0 2px 0 var(--secondary-blue);
+transform: translateY(2px);
+
+}
+
+
+
+button:active {
+
+transform: scale(0.98) translateY(2px);
+
+}
+
+
+
+#flag-box.animate {
+
+animation: pulseFlag 1s ease-in-out;
+
+}
+
+
+
+@keyframes pulseFlag {
+
+0% { transform: scale(0.9); opacity: 0; }
+50% { transform: scale(1.05); opacity: 1; }
+100% { transform: scale(1); opacity: 1; }
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+#controls, #flag-box, button#startBtn, #info, .map {
+
+width: 100%;
+float: none;
+margin-right: 0;
+margin-left: 0;
+clear: both;
+
+
+box-sizing: border-box;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+}
+
+
+.map {
+
+height: 400px;
+margin-top: 20px;
+padding: 0;
+
+}
+
+
+#container {
+
+padding: 15px;
+
+}
+
+h1 {
+
+font-size: 2em;
+
+} 
+
+#logo-container {
+    text-align: center; /
+    margin-bottom: 20px; 
+    padding-bottom: 0px; 
+    clear: both; 
+}
+
+#game-logo {
+    max-width: 200px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    box-shadow: 0 5px 15px rgb(54, 54, 172); 
+    border-radius: 20px; 
+}
+
+
+@media (max-width: 768px) {
+    #game-logo {
+        max-width: 180px; /* Daha küçük ekranlarda daha küçük logo */
+    }
+    #logo-container {
+        margin-bottom: 15px; /* Mobil için daha az boşluk */
+        padding-bottom: 5px;
+    }
+}
