@@ -311,10 +311,11 @@ font-size: 2em;
 
 @media (max-width: 768px) {
     #game-logo {
-        max-width: 180px; /* Daha küçük ekranlarda daha küçük logo */
+        max-width: 180px; 
     }
     #logo-container {
-        margin-bottom: 15px; /* Mobil için daha az boşluk */
+        margin-bottom: 15px; 
         padding-bottom: 5px;
     }
+
 }
